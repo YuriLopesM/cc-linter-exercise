@@ -175,19 +175,23 @@ Existem várias maneiras de automatizar a execução do ESLint, mostraremos duas
 
 Git Hooks são scripts que são executados automaticamente em determinados eventos do Git, como _commit_, _push_, _pull_ e _merge_. Podemos adicionar o ESLint em um _hook_ para que ele valide o código a cada _commit_.
 
-Para isso, iremos utilizar uma biblioteca chamada **Husky**. Abra a [documentação oficial](https://typicode.github.io/husky/get-started.html) para ter um guia de instalação detalhado sobre o assunto. Como não é o foco, iremos utilizar o setup básico que o Husky nos fornece.
+Para isso, iremos utilizar uma biblioteca chamada **Husky**. Abra a [documentação oficial](https://typicode.github.io/husky/get-started.html) para ter um guia de instalação detalhado sobre o assunto.
 
 ```bash
 # npm
+npm install --save-dev husky
 npx husky init
 
 # yarn
-# Devido algumas diferenças do yarn como gerenciador de pacotes, é necessário instalar o husky manualmente 
+yarn add --dev husky
+# Devido algumas diferenças do yarn como gerenciador de pacotes, é necessário fazer o setup manualmente
 
 # pnpm
+pnpm add --save-dev husky
 pnpm exec husky init
 
 # bun
+bun add --dev husky
 bunx husky init
 ```
 
