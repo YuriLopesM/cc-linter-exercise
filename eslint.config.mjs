@@ -9,7 +9,7 @@ export default defineConfig([
   { 
     files: ["**/*.{js,mjs,cjs}"],
     plugins: { js }, 
-    extends: ["js/recommended"],
+    extends: ["js/recommended"], // aqui podemos usar qualquer configuração
     rules: {
       "no-unused-vars": "error",
       "no-undef": "warn",

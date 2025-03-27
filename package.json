@@ -4,13 +4,17 @@
   "description": "Simple tutorial to use ESLint",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint index.js",
+    "prepare": "husky"
   },
   "author": "YuriLopesM",
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.23.0",
     "eslint": "^9.23.0",
-    "globals": "^16.0.0"
+    "globals": "^16.0.0",
+    "husky": "^9.1.7"
   }
 }
